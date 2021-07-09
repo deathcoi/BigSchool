@@ -1,15 +1,27 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<div class="row">
+<div class="course">
     <ul>
         @foreach (var course in Model)
         {
             <li>
-                @course.dateTime - @course.Lecture.Name
+                <div class="date">
+                    <div class="month">
+                        @course.dateTime.ToString("MM") - @course.dateTime.ToString("dd")
+                    </div>
+                </div>
+                <div class="details">
+                    <span class="lecture">
+                        @course.Lecture.Name
+                    </span>
+                    <span> -- </span>
+                    <span class="category">
+                        @course.category.Name
+                    </span>
+                </div>
             </li>
         }
-
     </ul>
 </div>
 <div class="jumbotron">

@@ -15,6 +15,8 @@ namespace BigSchool.Models
         [Required]
         [StringLength(255)]
         public string Place { get; set; }
+
+        [Display(Name = "Date Time")]
         public DateTime dateTime { get; set; }
         public Category category { get; set; }
         public byte Categoryid {get;set;}
