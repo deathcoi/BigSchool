@@ -5,6 +5,8 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Data.Entity;
+using BigSchool.ViewModels;
+
 namespace BigSchool.Controllers
 {
     public class HomeController : Controller
@@ -17,6 +19,11 @@ namespace BigSchool.Controllers
         public ActionResult Index()
         {
             var upcomming = dbContext.Course.Include(c => c.Lecture).Include(c => c.category).Where(c => c.dateTime > DateTime.Now);
+            var viewModel = new ViewModelsss
+            {
+                UpcommingCourses = upcomming,
+                ShowAction = User.Identity.IsAuthenticated
+            };
             return View(upcomming);
         }
 
