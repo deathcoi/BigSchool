@@ -1,0 +1,27 @@
+﻿@model BigSchool.ViewModels.CourseViewModel
+@{
+    ViewBag.Title = "Attending";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Following</h2>
+
+<div class="course">
+    <ul>
+        @foreach (var course in Model.Followingup)
+        {
+            <li>
+                <div class="details">
+                    <span> -- </span>
+                    <span class="category">
+                        @course.Follower.Name
+                    </span>
+                    @if (Model.ShowAction)
+                    {
+                        <button data-course-id="@course.FollowerId" class="btn btn-default btn-sm js-toggle-attendance">Followinggg ?</button>
+
+                    }
+                </div>
+            </li>
+        }
+    </ul>

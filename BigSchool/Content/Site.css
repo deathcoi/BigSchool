@@ -52,3 +52,12 @@
         width: 60px;
         border-radius: 8px;
     }
+.course > li .action {
+    display: none;
+    left: 70px;
+    position: absolute;
+
+}
+.course > li:hover .action {
+    display: block;
+}

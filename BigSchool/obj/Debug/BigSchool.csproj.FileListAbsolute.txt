@@ -98,3 +98,5 @@ D:\Web\BigSchool\BigSchool\bin\System.Web.Http.xml
 D:\Web\BigSchool\BigSchool\bin\System.Web.Http.WebHost.xml
 D:\Web\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.moi.resources
 D:\Web\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddFollowingsTable.resources
+D:\Web\BigSchool\BigSchool\obj\Debug\BigSchool.Migrations.AddIsCanceledColumnToCourse.resources
+D:\Web\BigSchool\BigSchool\obj\Debug\BigSchool.csproj.AssemblyReference.cache
